@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300&family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,400;1,800&family=Poppins:ital,wght@0,100;0,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(161, 236, 243, 0.678);
+  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 2000px;
+  overflow: hidden;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: absolute;
+}
+
+.card {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  padding: 1rem 1rem;
+  background: #ffffffff;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(110, 116, 116, 0.514);
+  transition: all 300ms ease;
+}
+
+.card:hover {
+  transform: translatey(-4%);
+  cursor: pointer;
+}
+
+.card .contenido {
+  position: relative;
+  top: 90px;
+  text-align: center;
+}
+
+.card .contenido h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.card .contenido h3 {
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.card .contenido p {
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card .contenido span {
+  color: #930ee4;
+}
+
+.card .contenido .card__cta {
+  padding: 15px;
+  background: #930ee4;
+  color: #fff;
+  border-radius: 30px;
+  margin: 10px auto;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.squirtle__image {
+  width: 180px;
+
+  position: absolute;
+  bottom: 300px;
+  left: 50px;
+}
+
+.charmander__image {
+  width: 130px;
+  position: absolute;
+  left: 80px;
+  bottom: 300px;
+}
+
+.bulbasur__image {
+  width: 200px;
+  position: absolute;
+  left: 50px;
+  bottom: 290px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    max-width: 2000px;
+    gap: 0;
+  }
+
+  .card {
+    min-width: 300px;
+    margin-top: 130px;
+  }
+}
